@@ -1,6 +1,8 @@
 # Bettina George — Personal Portfolio
+<img width="1187" height="897" alt="image" src="https://github.com/user-attachments/assets/dcf50823-2e2c-4927-9872-f2f31d0dbf8d" />
 
 ## 🚧 Under Construction
+
 
 This portfolio is actively being rebuilt. Content and layout may change frequently.
 
