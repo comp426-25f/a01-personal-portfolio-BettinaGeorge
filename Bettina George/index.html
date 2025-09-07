@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bettina George.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">resume</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1 class="brand-script">Bettina George</h1>
+        <h2>developer, designer, data-driven problem-solver, future PM.
+            </h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+            <tr>
+              <!-- LinkedIn -->
+              <td class="animated zoomIn" style="animation-delay:2.2s;">
+                <a class="social" href="https://www.linkedin.com/in/bettina-george/" target="_blank" rel="noopener">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </td>
+          
+              <!-- GitHub -->
+              <td class="animated zoomIn" style="animation-delay:2.4s;">
+                <a class="social" href="https://github.com/BettinaGeorge" target="_blank" rel="noopener">
+                  <i class="fab fa-github"></i>
+                </a>
+              </td>
+          
+              <!-- Outlook (use envelope icon since FA doesn’t have Outlook brand) -->
+              <td class="animated zoomIn" style="animation-delay:2.6s;">
+                <a class="social" href="mailto:gobetti@unc.edu">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </td>
+          
+              <!-- Instagram -->
+              <td class="animated zoomIn" style="animation-delay:2.8s;">
+                <a class="social" href="https://www.instagram.com/_be.t.tina_/" target="_blank" rel="noopener">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </td>
+            </tr>
+          </table>
+          
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-left"></i></div>
+        <h1>works.</h1>
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+              <!-- Skinny pill -->
+              <article class="project-card project-card--pill">
+                <img class="project-thumb" src="img/duolingo.png" alt="Duolingo Watch Feature preview" />
+                <div class="project-body">
+                  <h3 class="project-title">DUOLINGO WATCH</h3>
+                </div>
+                <div class="project-cta">
+                  <a class="pill pill-primary" href="https://vimeo.com/1041582266" target="_blank" rel="noopener">Open</a>
+                </div>
+              </article>
+            
+              <!-- Featured wide -->
+              <article class="project-card project-card--featured">
+                <img class="project-thumb" src="img/deimpact.png" alt="De-Impact app preview" />
+                <div class="project-body">
+                  <h3 class="project-title">De-Impact Web App (JPM Code for Good)</h3>
+                  <p class="project-desc">
+                    Connects volunteers with NGOs via skill/interest matching. React + TypeScript + Tailwind UI; team collaboration for demo delivery.
+                  </p>
+                  <div class="project-cta">
+                    <a class="pill pill-primary" href="https://www.youtube.com/watch?v=EJdtZWzPUoc" target="_blank" rel="noopener">Watch Demo</a>
+                  </div>
+                </div>
+              </article>
+            
+              <!-- Skinny pill -->
+              <article class="project-card project-card--pill">
+                <img class="project-thumb" src="img/fidpath.png" alt="FidPath game preview" />
+                <div class="project-body">
+                  <h3 class="project-title">FIDPATH</h3>
+                </div>
+                <div class="project-cta">
+                  <a class="pill pill-secondary" href="https://devpost.com/software/fidpath" target="_blank" rel="noopener">Devpost</a>
+                </div>
+              </article>
+            
+              <!-- Skinny pill -->
+              <article class="project-card project-card--pill">
+                <img class="project-thumb" src="img/diasporaduo.png" alt="Diaspora Duo preview" />
+                <div class="project-body">
+                  <h3 class="project-title">DIASPORA DUO</h3>
+                </div>
+                <div class="project-cta">
+                  <a class="pill pill-primary" href="https://devpost.com/software/diaspora-duo" target="_blank" rel="noopener">View Demo</a>
+                </div>
+              </article>
+            </div>
+            
+          </section>
+          <h2>Classes</h2>
+            <div class="projects-grid" aria-label="Relevant Coursework">
+              <!-- Pill cards with vertical titles (same layout as your screenshot) -->
+              <article class="project-card project-card--pill">
+                <div class="project-body"><h3 class="project-title">Data Structures & Algorithms</h3></div>
+              </article>
+
+              <article class="project-card project-card--pill">
+                <div class="project-body"><h3 class="project-title">Intro to Programming & Data Science</h3></div>
+              </article>
+
+              <article class="project-card project-card--pill">
+                <div class="project-body"><h3 class="project-title">Object-Oriented Programming</h3></div>
+              </article>
+
+              <article class="project-card project-card--pill">
+                <div class="project-body"><h3 class="project-title">Discrete Math</h3></div>
+              </article>
+
+              <article class="project-card project-card--pill">
+                <div class="project-body"><h3 class="project-title">Calculus I & II</h3></div>
+              </article>
+
+              <article class="project-card project-card--pill">
+                <div class="project-body"><h3 class="project-title">Linear Algebra</h3></div>
+              </article>
+
+              <article class="project-card project-card--pill">
+                <div class="project-body"><h3 class="project-title">Intro to Cybersecurity</h3></div>
+              </article>
+
+              <article class="project-card project-card--pill">
+                <div class="project-body"><h3 class="project-title">Modern Web Programming</h3></div>
+              </article>
+
+              <article class="project-card project-card--pill">
+                <div class="project-body"><h3 class="project-title">Computer Organization</h3></div>
+              </article>
+
+              <article class="project-card project-card--pill">
+                <div class="project-body"><h3 class="project-title">Systems Fundamentals</h3></div>
+              </article>
+
+              <article class="project-card project-card--pill">
+                <div class="project-body"><h3 class="project-title">Intro to DB Concepts & Apps</h3></div>
+              </article>
+
+              <article class="project-card project-card--pill">
+                <div class="project-body"><h3 class="project-title">Info Systems Analysis & Design</h3></div>
+              </article>
+
+              <article class="project-card project-card--pill">
+                <div class="project-body"><h3 class="project-title">Algorithms & Analysis</h3></div>
+              </article>
+            </div>
+
+       
+        
+      </section>
+          
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section id="aboutme" class="about-hero">
+              <figure class="about-portrait">
+                <!-- put your photo at img/profile.jpg (or change the src) -->
+                <img src="img/profile.jpg" alt="Bettina George portrait" loading="lazy">
+              </figure>
+            
+              <div class="about-copy">
+                <h2>beh-tee-nah</h2>
+                <p>
+                  Hi! I'm Bettina👋 
+            
+                </p>
+                <p> Beyond tech, I’m a content creator, connector, explorer, and builder. I love telling stories
+                  through visuals, traveling and trying new experiences that expand my perspective, building
+                  communities where people feel seen, and creating things that bring ideas to life. These identities
+                  fuel my work in tech: every product I design is shaped by curiosity, creativity, and the drive to
+                  connect people in meaningful ways.</p>
+              </div>
+            </section> 
+
+            <h2 class="tech-title">tech stack.</h2>
+
+
+            <section id="technologies" class="techs-section">
+              
+              <ul class="tech-grid" aria-label="Technologies I use">
+                <!-- languages / core -->
+                <li class="tech-ball"><img src="img/tech/c.svg" alt="C"></li>
+                
+                
+                <li class="tech-ball"><img src="img/tech/javascript.svg" alt="JavaScript"></li>
+                <li class="tech-ball"><img src="img/tech/typescript.svg" alt="TypeScript"></li>
+                <li class="tech-ball"><img src="img/tech/python.svg" alt="Python"></li>
+            
+                <!-- web / frameworks -->
+                <li class="tech-ball"><img src="img/tech/react.svg" alt="React"></li>
+                <li class="tech-ball"><img src="img/tech/nextdotjs.svg" alt="Next.js"></li>
+                <li class="tech-ball"><img src="img/tech/nodedotjs.svg" alt="Node.js"></li>
+                
+                <li class="tech-ball"><img src="img/tech/flask.svg" alt="Flask"></li>
+            
+                <li class="tech-ball"><img src="img/tech/tailwindcss.svg" alt="Tailwind CSS"></li>
+            
+                <!-- tooling / testing / db -->
+                <li class="tech-ball"><img src="img/tech/postgresql.svg" alt="PostgreSQL"></li>
+                <li class="tech-ball"><img src="img/tech/docker.svg" alt="Docker"></li>
+                <li class="tech-ball"><img src="img/tech/git.svg" alt="Git"></li>
+              
+                <li class="tech-ball"><img src="img/tech/cypress.svg" alt="Cypress"></li>
+              
+                <li class="tech-ball"><img src="img/tech/dbeaver.svg" alt="DBeaver"></li>
+                <li class="tech-ball"><img src="img/tech/jirasoftware.svg" alt="Jira Software"></li>
+            
+                <!-- design -->
+                <li class="tech-ball"><img src="img/tech/figma.svg" alt="Figma"></li>
+                <li class="tech-ball"><img src="img/tech/canva.svg" alt="Canva"></li>
+              </ul>
+            </section>
+            
+              
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            
+            
+              <h1>experience.</h1>
+            
+              <!-- Timeline -->
+              <section class="vtl">
+                <h2>Experiences</h2>
+            
+                <ol class="vtl-list">
+                  <!-- TA — left -->
+                  <li class="vtl-item vtl-left reveal">
+                    <div class="vtl-side vtl-card">
+                      <h3 class="vtl-role">Undergraduate Teaching Assistant (COMP 110)</h3>
+                      <p class="vtl-org">UNC Department of Computer Science</p>
+                      <p class="vtl-when">Aug 2025 – Present</p>
+                    </div>
+                    <div class="vtl-mid">
+                      <span class="vtl-node"><i class="fas fa-chalkboard-teacher"></i></span>
+                      <span class="vtl-date">AUG 2025 – PRESENT</span>
+                    </div>
+                  </li>
+            
+                  <!-- Lowe’s — right -->
+                  <li class="vtl-item vtl-right reveal">
+                    <div class="vtl-mid">
+                      <span class="vtl-node"><i class="fas fa-laptop-code"></i></span>
+                      <span class="vtl-date">MAY 2025 – AUG 2025</span>
+                    </div>
+                    <div class="vtl-side vtl-card">
+                      <h3 class="vtl-role">Software Engineering Intern</h3>
+                      <p class="vtl-org">Lowe’s Tech Hub</p>
+                      <p class="vtl-when">May 2025 – Aug 2025</p>
+                    </div>
+                  </li>
+            
+                  <!-- Break Through Tech — left -->
+                  <li class="vtl-item vtl-left reveal">
+                    <div class="vtl-side vtl-card">
+                      <h3 class="vtl-role">AI/ML Fellow</h3>
+                      <p class="vtl-org">Break Through Tech</p>
+                      <p class="vtl-when">May 2025 – Present</p>
+                    </div>
+                    <div class="vtl-mid">
+                      <span class="vtl-node"><i class="fas fa-brain"></i></span>
+                      <span class="vtl-date">MAY 2025 – PRESENT</span>
+                    </div>
+                  </li>
+            
+                  <!-- UNC SOG — right -->
+                  <li class="vtl-item vtl-right reveal">
+                    <div class="vtl-mid">
+                      <span class="vtl-node"><i class="fas fa-university"></i></span>
+                      <span class="vtl-date">AUG 2024 – PRESENT</span>
+                    </div>
+                    <div class="vtl-side vtl-card">
+                      <h3 class="vtl-role">Instructional Tech & Design Support Analyst</h3>
+                      <p class="vtl-org">UNC School of Government</p>
+                      <p class="vtl-when">Aug 2024 – Present</p>
+                    </div>
+                  </li>
+            
+                  <!-- Beats by Dre — left -->
+                  <li class="vtl-item vtl-left reveal">
+                    <div class="vtl-side vtl-card">
+                      <h3 class="vtl-role">Customer Trends Research Extern</h3>
+                      <p class="vtl-org">Beats by Dre</p>
+                      <p class="vtl-when">Jul 2024 – Aug 2024</p>
+                    </div>
+                    <div class="vtl-mid">
+                      <span class="vtl-node"><i class="fas fa-headphones"></i></span>
+                      <span class="vtl-date">JUL 2024 – AUG 2024</span>
+                    </div>
+                  </li>
+            <!-- résumé button on the rail -->
+<li class="vtl-item vtl-left reveal">
+  <div class="vtl-side vtl-card vtl-resume-cta">
+    <a id="resume-link" class="pill pill-primary" target="_blank" rel="noopener">my résumé</a>
+
+  </div>
+  <div class="vtl-mid">
+    <span class="vtl-node"><i class="fas fa-file-alt"></i></span>
+    <span class="vtl-date">OPEN PDF</span>
+  </div>
+</li>
+
+            
+            
+        </div>
+        <div id="footer">
+            📍 Chapel Hill, North Carolina, USA
+            <p>🎓Computer Science/ Information Science at UNC Chapel Hill</p>
+           
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
