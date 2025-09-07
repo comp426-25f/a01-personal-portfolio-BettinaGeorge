@@ -64,8 +64,10 @@ Technology logos are in **`img/tech/`**.
 │  └─ tech/               # SVG/PNG icons used in the tech-stack orbs
 └─ Resumé - Bettina 2026 (2).pdf
 
+```
 
 ## Template Credit
+
 
 This site was originally scaffolded from the open-source **Fimbo** portfolio template by [@imfunniee](https://github.com/imfunniee).
 Repository: <https://github.com/imfunniee/fimbo> · Demo: <https://imfunniee.github.io/fimbo>
